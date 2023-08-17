@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
-import background_Image from "../starter-code/assets/home/background-home-desktop.jpg"
+import background_Image from "../starter-code/assets/home/background-home-mobile.jpg"
 
 export default function Home() {
   return (
     <>
-        <section className="Home relative">
-           <div className="overlay flex flex-col items-center justify-center" 
+        <section className="home px-5">
+           <div className="overlay" 
                 style={{ 
                 backgroundImage: `url(${background_Image})`,
                 backgroundRepeat: "no-repeat",
@@ -13,9 +13,9 @@ export default function Home() {
                 backgroundSize: "cover",
                 height: "calc(100vh + 1px)",
                 }}>
-                <article>
-                    <h1 className="text-2xl text-gray-400"> SO YOU WANT TO TRAVEL TO <span>SPACE</span></h1>
-                    <p>Let's face it; if you want to go to space, you might
+                <article className="lg:w-1/2 lg:mr-20">
+                    <h1 className="text-2xl text-gray-400"> SO YOU WANT TO TRAVEL TO <span className="block text-4xl lg:text-6xl text-white mt-5 mb-10">SPACE</span></h1>
+                    <p className="text-gray-400">Let's face it; if you want to go to space, you might
                         as well genuinely go to the outer space and not
                         hover kind of on the edge of it. Well, sit back,
                         and relax because we'll give you a truly out of 
@@ -23,9 +23,9 @@ export default function Home() {
                     </p>
                 </article>
 
-                <article>
-                    <button className="mt-4">
-                        <Link to="/destination" className="px-4 py-2 bg-blue-500 text-white">
+                <article className="mt-20">
+                    <button className="w-48 h-48 rounded-full bg-white text-gray-800 uppercase font-bold text-4xl lg:text-5xl animate-pulse">
+                        <Link to="/destination">
                             Explore
                         </Link>
                     </button>
