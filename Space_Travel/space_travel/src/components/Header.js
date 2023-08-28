@@ -32,7 +32,7 @@ export default function Header() {
             <Link to="/" className="lg:text-white"><span className="lg:text-4xl lg:font-bold mr-2">00</span>Home</Link>
           </li>
           <li className="list-item">
-            <Link to="/destination" className="lg:text-white"><span className="lg:text-4xl lg:font-bold mr-2">01</span>Destination</Link>
+            <Link to="/destination" className="lg:text-white"><span className="lg:text-4xl lg:font-bold mr-2">01</span>{" "}Destination{" "}</Link>
           </li>
           <li className="list-item">
             <Link to="/crew" className="lg:text-white"><span className="lg:text-4xl lg:font-bold mr-2">02</span>Crew</Link>
