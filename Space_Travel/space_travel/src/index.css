@@ -7,6 +7,7 @@ body {
   font-family: "Mohave", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 18px
 }
 
 h1, h2 {
@@ -29,12 +30,38 @@ p {
   line-height: 1.8;
 }
 
+.home {
+  background: url("./starter-code/assets/home/background-home-mobile.jpg")
+   no-repeat center/cover;
+  height: calc(100vh + 1px)
+}
+
+@media (min-width: 768px) {
+  .home {
+    background: url("../src/starter-code/assets/home/background-home-desktop.jpg") 
+    no-repeat center/cover;
+  }
+}
+
 .header {
   position: absolute;
   top: 0;
   left: 0;
+  padding: 20px;
+}
+ 
+.header .navbar {
+  position: absolute;
+  background-color: white;
+  width: calc(100vw - 100px);
+  top: calc(90px - 10px);
+  padding: 20px;
 }
 
+.header .navbar ul li {
+  margin: 40px 0;
+
+}
 .home .overlay {
   display: flex;
   flex-direction: column;
@@ -43,20 +70,17 @@ p {
   height: calc(100vh + 1px);
   text-align: center;
 }
-@media (min-width: 768px) {
-  .home {
-    background: url("../src/starter-code/assets/home/background-home-desktop.jpg") no-repeat center/cover;
-  }
-}
+
 
 @media (min-width: 1024px) {
   .home .overlay {
     /* display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem; */
+    gap: 4rem; */
     flex-direction: row;
     text-align: left;
     max-width: 1000px;    
+    margin: auto;
   }
 }
 
