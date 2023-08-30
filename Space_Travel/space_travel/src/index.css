@@ -36,9 +36,27 @@ p {
   height: calc(100vh + 1px)
 }
 
+.home .overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh + 1px);
+  text-align: center;
+}
+
+.destination {
+  background: url("../src/starter-code/assets/destination/background-destination-mobile.jpg")
+  no-repeat center/cover;
+}
 @media (min-width: 768px) {
   .home {
-    background: url("../src/starter-code/assets/home/background-home-desktop.jpg") 
+    background: url("../src/starter-code/assets/home/background-home-tablet.jpg") 
+    no-repeat center/cover;
+  }
+
+  .destination {
+    background: url("../src/starter-code/assets/destination/background-destination-tablet.jpg")
     no-repeat center/cover;
   }
 }
@@ -68,15 +86,6 @@ header .navbar.open {
   margin: 40px 0;
 
 }
-.home .overlay {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: calc(100vh + 1px);
-  text-align: center;
-}
-
 
 @media (min-width: 1024px) {
  
@@ -99,11 +108,22 @@ header .navbar.open {
     margin: 0 40px;
   }
 
+  .home {
+    background: url("../src/starter-code/assets/home/background-home-desktop.jpg") 
+    no-repeat center/cover;
+  }
+
+
   .home .overlay {
     flex-direction: row;
     text-align: left;
     max-width: 1000px;    
     margin: auto;
+  }
+
+  .destination {
+    background: url("../src/starter-code/assets/destination/background-destination-desktop.jpg")
+    no-repeat center/cover;
   }
 }
 
