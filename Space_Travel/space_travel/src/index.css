@@ -49,6 +49,17 @@ p {
   background: url("../src/starter-code/assets/destination/background-destination-mobile.jpg")
   no-repeat center/cover;
 }
+
+.crew {
+  background: url("../src/starter-code/assets/crew/background-crew-mobile.jpg")
+  no-repeat center/cover;
+}
+
+.technology {
+  background: url("../src/starter-code/assets/technology/background-technology-mobile.jpg")
+  no-repeat center/cover;
+}
+
 @media (min-width: 768px) {
   .home {
     background: url("../src/starter-code/assets/home/background-home-tablet.jpg") 
@@ -57,6 +68,16 @@ p {
 
   .destination {
     background: url("../src/starter-code/assets/destination/background-destination-tablet.jpg")
+    no-repeat center/cover;
+  }
+
+  .crew {
+    background: url("../src/starter-code/assets/crew/background-crew-tablet.jpg")
+    no-repeat center/cover;
+  }
+
+  .technology {
+    background: url("../src/starter-code/assets/technology/background-technology-tablet.jpg")
     no-repeat center/cover;
   }
 }
@@ -79,7 +100,7 @@ p {
   transition: top 0.5s ease-in-out;
 }
 
-header .navbar.open {
+header .navbar .open {
   top: calc(90px - 10px);
 }
 .header .navbar ul li {
@@ -113,7 +134,6 @@ header .navbar.open {
     no-repeat center/cover;
   }
 
-
   .home .overlay {
     flex-direction: row;
     text-align: left;
@@ -123,6 +143,16 @@ header .navbar.open {
 
   .destination {
     background: url("../src/starter-code/assets/destination/background-destination-desktop.jpg")
+    no-repeat center/cover;
+  }
+
+  .crew {
+    background: url("../src/starter-code/assets/crew/background-crew-desktop.jpg")
+    no-repeat center/cover;
+  }
+
+  .technology {
+    background: url("../src/starter-code/assets/technology/background-technology-desktop.jpg")
     no-repeat center/cover;
   }
 }

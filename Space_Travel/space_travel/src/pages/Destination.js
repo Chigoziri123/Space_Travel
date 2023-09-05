@@ -16,8 +16,7 @@ export default function Destination() {
       <section className="home destination px-5">
         <h1 className="pt-20 lg:pt-40 lg:max-w-7xl lg:mx-auto text-white text-4xl uppercase mb-10">01 Pick your destination</h1>
 
-        <div className="pt-20 md:grid grid-cols-2 md:items-center
-        lg:max-w-7xl lg:mx-auto">
+        <div className="pt-20 md:grid grid-cols-2 md:items-center lg:max-w-7xl lg:mx-auto">
           <article>
             <img src={images.png} alt={name} title={name} 
             className="block mx-auto w-3/4 mb-10"/>
